@@ -1,0 +1,18 @@
+﻿<Window x:Class="CountDown_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CountDown_App"
+        mc:Ignorable="d"
+        Title="時計" Height="291.418" Width="579.851" ResizeMode="CanResizeWithGrip" Topmost="True">
+    <Grid>
+        <Viewbox Margin="0,0,0,64">
+            <TextBox x:Name="textBlock" Text="00:00:00" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" BorderBrush="#FF637DCB"/>
+        </Viewbox>
+        <Button Content="スタート" Height="35" Margin="111,201,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Background="White" Click="Button_Click_Start"/>
+        <Button Content="ストップ" HorizontalAlignment="Left" Height="35" Margin="333,201,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.5" Background="#FF1C2576" Foreground="White" Click="Button_Click_Stop"/>
+
+
+    </Grid>
+</Window>
